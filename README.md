@@ -21,6 +21,6 @@ curl -v POST http://localhost:8080/filter -d @sample_request.json --header "Cont
 ```bash
 cd data
 
-curl -v POST https://coding-challenge-nine-gpeqpaftgt.now.sh/filter -d @sample_request.json --header "Content-Type: application/json"
+curl -v POST https://coding-challenge-nine-zfwtcihvbn.now.sh/filter -d @sample_request.json --header "Content-Type: application/json"
 
 ```
