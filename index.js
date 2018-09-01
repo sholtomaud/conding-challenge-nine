@@ -31,6 +31,8 @@ http.createServer((req, res) => {
       .pipe(new Filter([ 'image', 'slug', 'title' ]))
       .pipe(res);
   } else {
+    const error = JSON.stringify({'error': '404'}, null, 4)
+    console.error(error);
     res.writeHead(404, {'Content-Type': 'text/html'});
     fs.createReadStream('404.html').pipe(res);
   }
