@@ -12,15 +12,7 @@ url
 ```bash
 cd data
 
-curl -v POST http://localhost:8080/filter -d @sample_request.json --header "Content-Type: application/json"
+curl -v POST http://localhost:8080/ -d @sample_request.json --header "Content-Type: application/json"
 
 ```
 
-## deployed call
-
-```bash
-cd data
-
-curl -v POST https://coding-challenge-nine-zfwtcihvbn.now.sh/filter -d @sample_request.json --header "Content-Type: application/json"
-
-```
